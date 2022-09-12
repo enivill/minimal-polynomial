@@ -1,0 +1,258 @@
+/*
+ #89043D   PIROS
+ #1C3041   KEK HATTER
+ #b0aaf0  ->  #30e5dc   BUTTON GRADIENT
+
+
+
+ */
+/*
+.button{
+    -fx-background-color: #94C5CC;
+    -fx-text-fill: #F8F8F8;
+
+    -fx-background-color:
+            #090a0c,
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Century Schoolbook";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+*/
+
+* {
+    -fx-red: #89043D;
+    -fx-dark-blue: #1C3041;
+    -fx-light-blue: #315472;
+    -fx-hover-blue: #6292BC;
+    -fx-pressed-blue: #375E81;
+    -fx-yellow: #F0C808;
+    -fx-active-blue: #5C8E99;
+
+}
+
+.root {
+
+    -fx-background-color: -fx-dark-blue;
+}
+
+.button{
+    -fx-background-color: -fx-light-blue;
+    -fx-background-radius: 20;
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+
+}
+
+.button:hover{
+    -fx-background-color: -fx-hover-blue;
+    -fx-background-radius: 20;
+}
+
+.button:pressed{
+    -fx-background-color: -fx-pressed-blue;
+    -fx-background-radius: 20;
+}
+
+
+.label{
+    -fx-font-family: "Verdana";
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.label.medium{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.label.large{
+    -fx-font-weight: bold;
+    -fx-font-size: 35px;
+    -fx-text-alignment: left;
+}
+
+.combo-box{
+    -fx-background-color: -fx-dark-blue;
+    -fx-background-radius: 5;
+}
+
+.combo-box:hover{
+    -fx-background-color: -fx-hover-blue;
+    -fx-background-radius: 5;
+}
+
+.combo-box:pressed{
+    -fx-background-color: -fx-pressed-blue;
+    -fx-background-radius: 5;
+}
+
+.combo-box .arrow{
+    -fx-background-color:white;
+}
+
+.combo-box .list-cell{
+    -fx-text-fill: white;
+    -fx-font-family: Verdana;
+}
+
+.combo-box .list-view .list-cell{
+    -fx-background-color: -fx-light-blue;
+}
+
+.combo-box .list-view .list-cell:hover{
+    -fx-background-color: -fx-hover-blue;
+}
+
+
+.check-box .box {
+    -fx-background-color: -fx-dark-blue;
+    -fx-padding: 7px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -fx-dark-blue;
+}
+
+.check-box:hover .box {
+    -fx-background-color: -fx-hover-blue;
+}
+
+.text-field {
+    -fx-font-family: "Verdana";
+    -fx-text-fill: white;
+    -fx-background-color: -fx-hover-blue ;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 10 ;
+}
+
+.text-field:focused {
+    -fx-background-color: white, -fx-hover-blue;
+    -fx-background-insets: 0,  0 0 1 0 ; /* t, r, b, l */
+    -fx-background-radius: 9, 9;
+    -fx-border-color: -fx-dark-blue, -fx-red;
+    -fx-border-insets: 0, 1 1 1 1;
+    -fx-border-radius: 10, 10;
+    -fx-border-width: 2, 2 0 2 0;
+}
+
+.tooltip{
+    -fx-show-delay: 80ms;
+    -fx-font-size: 13px;
+}
+
+.decorPane{
+    -fx-background-color: -fx-red;
+}
+
+VBox {
+    -fx-background-color: -fx-dark-blue;
+    -fx-background-radius: 30;
+}
+
+FlowPane{
+    -fx-background-color: -fx-dark-blue;
+    -fx-min-width: 500;
+    -fx-min-height: -1;
+    -fx-max-width: -1;
+    -fx-max-height: -1;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+    -fx-padding: 2 ;
+}
+
+
+
+.scroll-pane{
+    -fx-background: -fx-dark-blue;
+    -fx-background-color: -fx-dark-blue;
+}
+
+.gridPaneInput {
+    -fx-text-alignment: center;
+    -fx-background-radius: 20;
+    -fx-hgap: 10;
+    -fx-vgap: 1;
+}
+
+.theory-label{
+    -fx-font-family: "Verdana";
+   /* -fx-font-weight: bold;*/
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-text-alignment: left;
+}
+
+.theory-label-blue{
+    -fx-font-family: "Consolas";
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    /*-fx-text-fill: white;*/
+    -fx-background-color: -fx-pressed-blue ;
+    -fx-background-radius: 8;
+}
+
+.theory-label-step{
+    -fx-font-family: "Consolas";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-background-color: -fx-red ;
+    -fx-background-radius: 8;
+}
+
+.theory-label-without-bg{
+    -fx-font-family: "Consolas";
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+
+.active-label{
+    -fx-cursor: hand;
+    -fx-background-color:  -fx-active-blue;
+    -fx-background-radius: 3;
+    -fx-padding: 1px;
+}
+
+.result{
+    -fx-padding: 17px;
+    -fx-border-insets: 17px;
+    -fx-background-insets: 17px;
+    -fx-font-family: "Consolas";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: -fx-dark-blue;
+    -fx-background-color: -fx-yellow ;
+    -fx-background-radius: 9;
+}
+
+.vbox-transition{
+    -fx-alignment: center;
+}
+
+.vbox-parameters{
+    -fx-background-color: -fx-pressed-blue;
+    -fx-background-radius: 3;
+}
+
+
+
