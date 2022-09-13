@@ -56,3 +56,26 @@ Priečinok *src* obsahuje zdrojový kód aplikáce.
 Aplikácia bola vyvíjaná pomocou **Maven**. Súbor `pom.xml` obsahuje informácie o projekte a informácie o konfigurácii pre mavena na zostavenie projektu.
 
 vyvýjala: Enikő Villantová
+
+## Preview / Ukážka
+**Front page**
+
+![front_page](https://user-images.githubusercontent.com/57987866/189872330-2608877c-43d2-47db-9a00-6cf30afd56dc.png)
+
+**Calculation setup**
+
+![setup](https://user-images.githubusercontent.com/57987866/189872355-aacef3db-bff1-44ad-b119-142708889442.png)
+
+**Calculation**
+
+![calculation](https://user-images.githubusercontent.com/57987866/189872384-50533c6c-cab2-4b1e-a4f2-a74a255dcfac.png)
+
+**Interactive elements**
+
+![calculation2](https://user-images.githubusercontent.com/57987866/189872406-f8f3734d-bc55-4c01-8697-82fefc3fbb98.png)
+![calculation3](https://user-images.githubusercontent.com/57987866/189872429-ad915ac8-b01c-47ae-b577-7f58e4b85f1c.png)
+
+**Result**
+
+![result](https://user-images.githubusercontent.com/57987866/189872452-eccf4ad2-50f9-45c1-9195-53d1fdc59073.png)
+
